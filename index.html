@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<!-- css --> 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet"> 
+<link href="css/flexslider.css" rel="stylesheet" /> 
+<link href="css/style.css" rel="stylesheet" />
+ 
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div id="wrapper" class="home-page"> 
+	<!-- start header -->
+	<header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                </div>
+                <div class="navbar-collapse collapse ">
+                	<a class="navbar-brand" href="index.html" style="width:20%"><img src="img/ByteDance_logo_English.svg.png" style="width:90%" alt="logo"/></a>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a class="waves-effect waves-dark" >AI-Lab</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</header>
+	<!-- end header -->
+	<section id="banner">
+	 
+	<!-- Slider -->
+        <div id="main-slider" class="flexslider">
+            <ul class="slides">
+              <li>
+                <img src="img/slides/Wave 2.jpg" alt="" />
+                <div class="flex-caption">
+                    <h3>ICASSP 2023</h3> 
+					<p>Speech Demo</p> 
+					 
+                </div>
+              </li>
+            </ul>
+        </div>
+	<!-- end slider --> 
+	</section>  
+	<section id="content" style="background-color:#f5f5f5"> 
+	<div class="container">
+	    	<div class="row">
+			<div class="col-md-12">
+				<div class="aligncenter"><h2 class="aligncenter">A Novel Chinese Dialect TTS Frontend with Non-Autoregressive Neural Machine Translation</h2>Junhui Zhang, Wudi Bao, Junjie Pan, Xiang Yin, Zejun Ma</div>
+				<br/>
+			</div>
+		</div>
+
+	 <div class="row">
+            <div class="col-sm-4 info-blocks"> 
+                <div class="info-blocks-in">
+                    <img src="img/figure1_3.0.png" width=80%>
+                </div>
+            </div>
+            <div class="col-sm-4 info-blocks">
+                <div class="info-blocks-in" style="width: 200%;text-align:justify">
+                    <p><strong>Abstract:</strong>
+              Chinese dialect text-to-speech(TTS) system usually can only be utilized by native linguists, because the written form of Chinese dialects has different characters, idioms, grammar and usage from Mandarin, and even the local speaker cannot input a correct sentence. For Mandarin text inputs, Chinese dialect TTS can only generate partly-meaningful speech with relatively poor prosody and naturalness. To lower the bar of use and make it more practical in commercial, we propose a novel Chinese dialect TTS frontend with a translation module. It helps to convert Mandarin text into idiomatic expressions with correct orthography and grammar, so that the intelligibility and naturalness of the synthesized speech can be improved. A non-autoregressive neural machine translation model with a glancing sampling strategy is proposed for the translation task. It is the first known work to incorporate translation with TTS frontend. Our experiments on Cantonese approve that the proposed frontend can help Cantonese TTS system achieve a 0.27 improvement in MOS with Mandarin inputs.</p>
+                </div>
+            </div>
+            
+        </div>
+	</section>
+	
+	<section class="section-padding gray-bg" style="background-color: #fff;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title text-center">
+						<h2>Synthesized results</h2>
+						<p style="text-align: left;">NOTE: the Mandarin Text&TTS results is the original input text and the sythesized Cantonese speech by typical Mandarin frontend(baseline). The Cantonese Text&Dialect TTS results is the text translated by our NAT model and the sythesized Cantonese speech by dialect frontend(proposed). </p>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+						
+						<div class="row">
+							<div class="col-md-3"> 
+							<div class="block-heading-two" style="text-align:center;">
+									<h3><span>Mandarin Text</span></h3>
+								</div>	
+							</div>
+							<div class="col-md-3">
+								<div class="block-heading-two" style="text-align:center;">
+									<h3><span>Mandarin TTS</span></h3>
+								</div>		
+							</div>
+							<div class="col-md-3">
+								<div class="block-heading-two">
+									<h3><span>Cantonese Text</span></h3>
+								</div>	
+							</div>
+							<div class="col-md-3">
+								<div class="block-heading-two">
+									<h3><span>Dialect TTS</span></h3>
+								</div>	  
+							</div>
+						</div>				
+						 
+					 	<div class="row">
+							<div class="col-md-3" style="margin-top: 12px;"> 
+							<p>没有，在继续当中，你回家了没有？</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/22_mand.wav" style="width:260px"></audio>	
+							</div>
+							<div class="col-md-3" style="margin-top: 12px;">
+							<p>冇，喺继续当中，你翻屋企未啊？</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/22_cant.wav" style="width:260px">
+							</div>
+						</div>	
+
+						<div class="row">
+							<div class="col-md-3" style="margin-top: 12px;"> 
+							<p>没去，过几天就好了，没事。</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/42_mand.wav" style="width:260px"></audio>	
+							</div>
+							<div class="col-md-3" style="margin-top: 12px;">
+							<p>冇去，过几日就好啦，冇事。</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/42_cant.wav" style="width:260px">
+							</div>
+						</div>	
+
+						<!-- <div class="row">
+							<div class="col-md-3" style="margin-top: 12px;"> 
+							<p>希望不大，这说明我还有希望是吗？</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/79_mand.wav" style="width:260px"></audio>	
+							</div>
+							<div class="col-md-3" style="margin-top: 12px;">
+							<p>希望唔大，咁讲明我仲有希望系咩？</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/79_cant.wav" style="width:260px">
+							</div>
+						</div>	
+
+						<div class="row">
+							<div class="col-md-3" style="margin-top: 12px;"> 
+							<p>还有一些好电影，暂时想不起来了。</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/112_mand.wav" style="width:260px"></audio>	
+							</div>
+							<div class="col-md-3" style="margin-top: 12px;">
+							<p>仲有一啲好电影，暂时谂唔起身啦。</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/112_cant.wav" style="width:260px">
+							</div>
+						</div>	 -->
+
+						<div class="row">
+							<div class="col-md-3" style="margin-top: 12px;"> 
+							<p>你把户口也转回来吧，把社保也买上。</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/135_mand.wav" style="width:260px"></audio>	
+							</div>
+							<div class="col-md-3" style="margin-top: 12px;">
+							<p>你将户口都转翻嚟啦，将社保都买上。</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/135_cant.wav" style="width:260px">
+							</div>
+						</div>	
+
+<!-- 						<div class="row">
+							<div class="col-md-3" style="margin-top: 12px;"> 
+							<p>从来没有的开始，哪来的放弃。</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/171_mand.wav" style="width:260px"></audio>	
+							</div>
+							<div class="col-md-3" style="margin-top: 12px;">
+							<p>从来冇得开始，边嚟嘅放弃。</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/171_cant.wav" style="width:260px">
+							</div>
+						</div>	 -->
+
+						<div class="row">
+							<div class="col-md-3" style="margin-top: 12px;"> 
+							<p>视觉上的享受，美女帅哥都在装傻卖萌。</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/162_mand.wav" style="width:260px"></audio>	
+							</div>
+							<div class="col-md-3" style="margin-top: 12px;">
+							<p>视觉上嘅享受，靓女靓仔都喺度扮傻卖萌。</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/162_cant.wav" style="width:260px">
+							</div>
+						</div>	
+
+<!-- 						<div class="row">
+							<div class="col-md-3" style="margin-top: 12px;"> 
+							<p>旧版有，新版不知怎么没有了。</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/188_mand.wav" style="width:260px"></audio>	
+							</div>
+							<div class="col-md-3" style="margin-top: 12px;">
+							<p>旧版有，新版唔知点解冇啦。</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/188_cant.wav" style="width:260px">
+							</div>
+						</div>	 -->
+					  
+
+					  <div class="row">
+							<div class="col-md-3" style="margin-top: 12px;"> 
+							<p>我很累，但是我想你了。</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/191_mand.wav" style="width:260px"></audio>	
+							</div>
+							<div class="col-md-3" style="margin-top: 12px;">
+							<p>我好攰，但系我挂住你啦。</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/191_cant.wav" style="width:260px">
+							</div>
+					  </div>
+<!-- 	
+					  <div class="row">
+							<div class="col-md-3" style="margin-top: 12px;"> 
+							<p>晕，饿坏了吧，到了赶紧吃饭。</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/210_mand.wav" style="width:260px"></audio>	
+							</div>
+							<div class="col-md-3" style="margin-top: 12px;">
+							<p>晕，饿坏咗啦，到咗快啲食饭。</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/210_cant.wav" style="width:260px">
+							</div>
+					  </div>
+
+					  <div class="row">
+							<div class="col-md-3" style="margin-top: 12px;"> 
+							<p>妈咪爸回来了吗？还是在工作呢？</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/219_mand.wav" style="width:260px"></audio>	
+							</div>
+							<div class="col-md-3" style="margin-top: 12px;">
+							<p>妈咪阿爸翻嚟未啊？定系喺度工作咧？</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/219_cant.wav" style="width:260px">
+							</div>
+						</div>	 -->
+
+<!-- 					  <div class="row">
+							<div class="col-md-3" style="margin-top: 12px;"> 
+							<p>你怎么知道这么多名牌，你才是富二代。</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/235_mand.wav" style="width:260px"></audio>	
+							</div>
+							<div class="col-md-3" style="margin-top: 12px;">
+							<p>你点知道咁多名牌，你先系富二代。</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/235_cant.wav" style="width:260px">
+							</div>
+					  </div> -->
+
+					 <div class="row">
+							<div class="col-md-3" style="margin-top: 12px;"> 
+							<p>他是个男生，她也是个好女生。</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/399_mand.wav" style="width:260px"></audio>	
+							</div>
+							<div class="col-md-3" style="margin-top: 12px;">
+							<p>佢系个男仔，佢都系个好女仔。</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/399_cant.wav" style="width:260px">
+							</div>
+					  </div>
+
+					  </div>
+
+		</div>
+	</section>	  
+	
+	
+	
+
+	<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<div class="widget">
+					<h5 class="widgetheading">Our Contact</h5>
+					<address>
+					<strong>ByteDance Ltd</strong><br>
+					Yishan Road, Minhang District,<br>
+					Shanghai, China.</address>
+					
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="widget">
+					<p style="text-align:justify">
+						<br><br>
+						<i class="icon-envelope-alt"></i> baowudi@bytedance.com<br>zhangjunhui.915@bytedance.com<br>panjunjie.jeff@bytedance.com<br>yinxiang.stephen@bytedance.com
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	</footer>
+</div>
+<!-- javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="materialize/js/materialize.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox-media.js"></script>  
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/animate.js"></script>
+<!-- Vendor Scripts -->
+<script src="js/modernizr.custom.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/animate.js"></script> 
+<script src="js/custom.js"></script>
+</body>
+</html>
