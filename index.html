@@ -91,8 +91,8 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="section-title text-center">
-						<h2>Synthesized results</h2>
-						<p style="text-align: left;">Mandarin text is the original input and the translated Cantonese text is the result of the translation model. Synthesized speech of Mandarin text uses normal dialect TTS frontend and synthesized speech of translated text uses the proposed dialect TTS frontend. </p>
+						<h2>Speech-to-Speech Translation Results</h2>
+						<p style="text-align: left;">The source speech is the S2ST model input and the translated speech is the model output. The corresponding Mandarin and Cantonese texts are transcribed by Cantonese linguistic experts.</p>
 					</div>
 				</div>
 			</div>
@@ -102,40 +102,59 @@
 						<div class="row">
 							<div class="col-md-3"> 
 							<div class="block-heading-two" style="text-align:center;">
-									<h3><span>Mandarin Text</span></h3>
+									<h3><span>Source Speech</span></h3>
 								</div>	
 							</div>
 							<div class="col-md-3">
 								<div class="block-heading-two" style="text-align:center;">
-									<h3><span>Translated Cantonese Text</span></h3>
+									<h3><span>Transcribed Mandarin Text (by linguistic experts)</span></h3>
 								</div>	
 							</div>
 							<div class="col-md-3">
 								<div class="block-heading-two" style="text-align:center;">
-									<h3><span>Synthesized Speech of Mandarin Text (Baseline)</span></h3>
+									<h3><span>Translated Speech</span></h3>
 								</div>		
 							</div>
 							<div class="col-md-3">
 								<div class="block-heading-two" style="text-align:center;">
-									<h3><span>Synthesized Speech of Translated Text (Proposed)</span></h3>
+									<h3><span>Transcribed Cantonese Text (by linguistic experts)</span></h3>
 								</div>	  
 							</div>
 						</div>				
 						 
 					 	<div class="row">
+							<div class="col-md-3">
+							<audio controls="control" src="wav/1_src.wav" style="width:260px"></audio>	
+							</div>
 							<div class="col-md-3" style="margin-top: 12px;"> 
-							<p>没有，在继续当中，你回家了没有？</p>
+							<p>我们零准备，怎么能说特训就特训呢。</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/1_pred.wav" style="width:260px">
 							</div>
 							<div class="col-md-3" style="margin-top: 12px;">
-							<p>冇，喺继续当中，你翻屋企未啊？</p>
-							</div>
-							<div class="col-md-3">
-							<audio controls="control" src="wav/22_mand.wav" style="width:260px"></audio>	
-							</div>
-							<div class="col-md-3">
-							<audio controls="control" src="wav/22_cant.wav" style="width:260px">
+							<p>我哋零准备，点可以讲特训就特训。</p>
 							</div>
 						</div>	
+							
+						<div class="row">
+							<div class="col-md-3">
+							<audio controls="control" src="wav/2_src.wav" style="width:260px"></audio>	
+							</div>
+							<div class="col-md-3" style="margin-top: 12px;"> 
+							<p> 哇，你怎么啦？这么有同情心啊。</p>
+							</div>
+							<div class="col-md-3">
+							<audio controls="control" src="wav/2_pred.wav" style="width:260px">
+							</div>
+							<div class="col-md-3" style="margin-top: 12px;">
+							<p>哇，你点啊？咁有同情心。</p>
+							</div>
+						</div>	
+							
+							
+							
+							
 
 						<div class="row">
 							<div class="col-md-3" style="margin-top: 12px;"> 
